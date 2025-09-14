@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive CSS + JS Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive CSS & JS Demo</h1>
+
+  <!-- Button with hover effect -->
+  <button id="animateBtn">Animate Box</button>
+
+  <!-- Animated Box -->
+  <div id="animatedBox" class="box"></div>
+
+  <!-- Spinner for continuous animation -->
+  <div class="spinner"></div>
+
+  <!-- Card flip example -->
+  <div class="card" id="card1">
+    <div class="card-inner">
+      <div class="card-front">Front</div>
+      <div class="card-back">Back</div>
+    </div>
+  </div>
+  <button onclick="flipCard('card1')">Flip Card</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
