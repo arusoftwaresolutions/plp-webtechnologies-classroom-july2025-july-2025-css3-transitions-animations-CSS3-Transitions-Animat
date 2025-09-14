@@ -1,0 +1,40 @@
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #e74c3c;
+  margin: 20px auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* Trigger on page load */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* continuous spin */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
